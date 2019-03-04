@@ -157,7 +157,15 @@ footer p {
 }
 
 img {
-    max-width: 100%;
+    display: block;
+    border: solid 1px #555;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 /** Intvert colors
@@ -211,4 +219,15 @@ img {
 .toggle-off:hover {
     background-color: var(--accent) !important;
     color: #f8f8f8 !important;
+}
+
+/* misc stylings */
+.flex-wrapper {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.giphy-embed {
+    align-self: center;
+    margin: 0 auto;
 }

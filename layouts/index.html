@@ -1,18 +1,23 @@
 {{ partial "header" . }}
 
-<main class = "content-box">
+<main class="content-box">
 
     <div class="intro">
 
         <div class="avatar">
-            <img class="img-responsive" src="{{ .Site.BaseURL }}img/{{ .Site.Params.logo }}" alt="Whoopsies, this is my bad side!" style = "margin: 0 auto;">
+            <img class="img-responsive" src="{{ .Site.BaseURL }}img/{{ .Site.Params.logo }}"
+                alt="Whoopsies, this is my bad side!" style="margin: 0 auto;">
             <h1>{{ .Title }}</h1>
         </div>
-        
-        
-        <div style = "margin-top: 50px">
+
+
+        <div style="margin-top: 50px">
             <h2>{{ .Site.Params.description }}</h2>
         </div>
+    </div>
+    <div class="homepage-content">
+        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+        {{.Content}}
     </div>
 
 </main>

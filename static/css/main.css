@@ -45,6 +45,20 @@ main {
     border-radius: 50%;
 }
 
+.homepage-content {
+    margin-top: 5vh;
+}
+
+.homepage-content > h3 {
+    font-size: 1.9em;
+    font-style: italic;
+}
+
+.homepage-content > p {
+    font-size: 1.75em;
+    text-align: left;
+}
+
 /*apply accent colour to links*/
 
 a:link, a:visited {

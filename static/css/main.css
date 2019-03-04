@@ -156,7 +156,7 @@ footer p {
     color: #cccccc;
 }
 
-img {
+.text-justify img {
     display: block;
     border: solid 1px #555;
     max-width: 80%;

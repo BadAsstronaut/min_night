@@ -2,15 +2,22 @@
 
 <main>
     <h2>{{ .Title }}</h2>
-
-    {{ range (.Paginator 10).Pages }}
-        {{ if eq "Posts" $.Title }}
-           {{partial "list-item-post.html" .}}
-        {{else}}
+    <div class="main-list">
+        <div class="posts">
+            {{ range (.Paginator 10).Pages }}
+            {{ if eq "Posts" $.Title }}
+            {{partial "list-item-post.html" .}}
+            {{else}}
             {{ partial "list-item-project" . }}
-        {{end}}
-    {{end}}
-    
+            {{end}}
+            {{end}}
+        </div>
+        <div class="twitter-feed">
+            <a class="twitter-timeline" data-partner="tweetdeck" data-theme="dark" data-width="100%" data-height="100%"
+                href="https://twitter.com/_badasstronaut/timelines/1102714512757612545"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
 </main>
 
 {{ partial "paginator" . }}
